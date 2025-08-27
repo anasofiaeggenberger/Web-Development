@@ -110,4 +110,30 @@
       
       .info-personal {
         flex: 1;
+      }
+      
+      .grid-educacion {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 10px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+      }
+      
+      .grid-educacion .header {
+        font-weight: bold;
+        background-color: #eee;
+        padding: 8px;
+        border-radius: 4px;
+      }
+      
+      .grid-educacion .dato {
+        padding: 8px;
+      }
+      
+      .caption {
+        font-weight: bold;
+        margin-bottom: 10px;
       }      
