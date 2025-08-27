@@ -225,3 +225,19 @@
       gap: 30px;
     }
   }
+
+p a {
+    color: #004466;
+  }
+  
+  .cv-button {
+    margin-top: 15px;
+  }
+  
+  .grid-educacion .header {
+    font-size: 15px;
+  }
+  
+  .grid-educacion .dato {
+    font-size: 14px;
+  }
