@@ -95,3 +95,19 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
   
+    .presentacion {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+      
+      .foto-perfil {
+        width: 90px;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+      
+      .info-personal {
+        flex: 1;
+      }      
