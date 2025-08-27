@@ -136,4 +136,42 @@
       .caption {
         font-weight: bold;
         margin-bottom: 10px;
-      }      
+      }
+      
+@media screen and (max-width: 400px) {
+    body {
+      padding: 10px;
+    }
+  
+    .presentacion {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .foto-perfil {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    h2, h3 {
+      font-size: 18px;
+    }
+  
+    .cv-button {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .grid-educacion {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid-educacion .header {
+      background-color: #ddd;
+    }
+  }
