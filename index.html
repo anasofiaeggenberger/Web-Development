@@ -1,129 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>Web Development</title>
-  <link rel="icon" type="image/png" href="images/ufm_logo.png" />
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sofía Eggenberger Flores</title>
+    <link rel="icon" type="image/png" href="images/ufm_logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f4ef;
+        color: #4a3f35;
+        padding: 40px 20px;
+      }
 
-<body>
-  <div class="presentacion">
-    <img src="images/PHOTO-ASE.jpg" alt="Foto de Ana Sofía" class="rounded-circle border border-2 border-secondary shadow-sm" width="120">
-  
+      h1, h2, h3 {
+        font-weight: 600;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      .foto-perfil {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 20px;
+        border: 2px solid #d9cfc4;
+      }
+
+      .info-personal p {
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      a {
+        color: #6c4f3d;
+        text-decoration: none;
+      }
+
+      .badge {
+        font-size: 0.9rem;
+        padding: 0.6em 0.8em;
+        border-radius: 0.8rem;
+        background-color: #d7c4b7;
+        color: #4a3f35;
+      }
+
+      .cv-button {
+        margin-top: 25px;
+        display: block;
+        text-align: center;
+      }
+
+      .cv-button button {
+        font-size: 1rem;
+        padding: 10px 25px;
+        border-radius: 8px;
+        border: none;
+        background-color: #cbb6a3;
+        color: white;
+        transition: 0.3s;
+      }
+
+      .cv-button button:hover {
+        background-color: #bfa890;
+      }
+
+      section {
+        background-color: #fffefc;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 10px;
+      }
+
+      .grid-section .header {
+        font-weight: bold;
+        background-color: #eee6df;
+        padding: 8px;
+        border-radius: 4px;
+      }
+
+      .grid-section .dato {
+        padding: 8px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .grid-section {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ana Sofía Eggenberger Flores</h1>
+
+    <img src="images/PHOTO-ASE.jpg" alt="Foto de Ana Sofía" class="foto-perfil" />
+
     <div class="info-personal">
-      <h1>Ana Sofía Eggenberger Flores</h1>
-  
-      <p>
-        📧 <a href="mailto:anasofiaeggenberger@gmail.com">anasofiaeggenberger@gmail.com</a>
-      </p>
-      <p>
-        💻 <a href="https://github.com/anasofiaeggenberger" target="_blank">Mi GitHub</a>
-      </p>
-      <p>
-        🔗 <a href="https://www.linkedin.com/in/ana-sof%C3%ADa-eggenberger-a945932b2/?trk=opento_sprofile_topcard" target="_blank">Mi LinkedIn</a>
-      </p>
+      <p>📧 <a href="mailto:anasofiaeggenberger@gmail.com">anasofiaeggenberger@gmail.com</a></p>
+      <p>💻 <a href="https://github.com/anasofiaeggenberger" target="_blank">Mi GitHub</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/ana-sof%C3%ADa-eggenberger-a945932b2/" target="_blank">Mi LinkedIn</a></p>
     </div>
-  </div>  
 
-  <h3>Lenguajes de programación que sé usar</h3>
-  <ul>
-    <li>Python</li>
-    <li>HTML</li>
-    <li>C++</li>
-  </ul>
+    <h3>Lenguajes de programación que sé usar</h3>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge">Python</span>
+      <span class="badge">HTML</span>
+      <span class="badge">C++</span>
+    </div>
 
-  <h3 class="mt-4">Soft Skills</h3>
-<div class="accordion" id="accordionSoftSkills">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingSoftSkills">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoftSkills" aria-expanded="false" aria-controls="collapseSoftSkills">
-        Ver habilidades blandas
-      </button>
-    </h2>
-    <div id="collapseSoftSkills" class="accordion-collapse collapse" aria-labelledby="headingSoftSkills" data-bs-parent="#accordionSoftSkills">
-      <div class="accordion-body">
-        <ul>
-          <li>Trabajo en equipo</li>
-          <li>Comunicación</li>
-          <li>Resolución de problemas</li>
-          <li>Adaptabilidad</li>
-          <li>Liderazgo</li>
-          <li>Gestión del tiempo</li>
-          <li>Aprendizaje autónomo</li>
-        </ul>
+    <h3>Soft Skills</h3>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge">Trabajo en equipo</span>
+      <span class="badge">Comunicación</span>
+      <span class="badge">Resolución de problemas</span>
+      <span class="badge">Adaptabilidad</span>
+      <span class="badge">Liderazgo</span>
+      <span class="badge">Gestión del tiempo</span>
+      <span class="badge">Aprendizaje autónomo</span>
+    </div>
+
+    <h3>Tecnologías que he usado</h3>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge">GitHub</span>
+      <span class="badge">Visual Studio Code</span>
+      <span class="badge">Jupyter Notebook</span>
+      <span class="badge">Google Colab</span>
+      <span class="badge">Figma</span>
+    </div>
+
+    <div class="cv-button">
+      <a href="docs/CV-AnaSofia.pdf" download>
+        <button>Descargar CV</button>
+      </a>
+    </div>
+
+    <section>
+      <h2>Educación</h2>
+      <div class="grid-section">
+        <div class="header">Año</div>
+        <div class="header">Institución</div>
+        <div class="header">Título obtenido</div>
+
+        <div class="dato">2023</div>
+        <div class="dato">Colegio Interamericano de Guatemala</div>
+        <div class="dato">Bachillerato en Ciencias y Letras</div>
+
+        <div class="dato">2024 - Presente</div>
+        <div class="dato">Universidad Francisco Marroquín</div>
+        <div class="dato">Ingeniería en Ciencia de la Computación</div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-<h3 class="mt-4">Tecnologías que he usado</h3>
-<div class="d-flex flex-wrap gap-2">
-  <span class="badge bg-secondary">GitHub</span>
-  <span class="badge bg-secondary">Visual Studio Code</span>
-  <span class="badge bg-secondary">Jupyter Notebook</span>
-  <span class="badge bg-secondary">Google Colab</span>
-  <span class="badge bg-secondary">Figma</span>
-</div>
+    <section>
+      <h2>Experiencia Laboral</h2>
+      <div class="grid-section">
+        <div class="header">Período</div>
+        <div class="header">Empresa</div>
+        <div class="header">Puesto</div>
 
+        <div class="dato">Jun 2023 – Ago 2023</div>
+        <div class="dato">Tech4Humanity</div>
+        <div class="dato">Desarrolladora Junior (Intern)</div>
 
-  <p>
-    📄 <a href="docs/CV-AnaSofia.pdf" download class="btn btn-outline-dark shadow-sm">
-      Descargar CV
-    </a>
-  </p>  
+        <div class="dato">Mar 2024 – Presente</div>
+        <div class="dato">Wais Solutions</div>
+        <div class="dato">Frontend Developer</div>
+      </div>
+    </section>
 
-  <button class="cv-button" onclick="toggleDarkMode()">Activar Modo Oscuro</button>
-
-  <section id="educacion">
-    <h2>Educación</h2>
-    <p class="caption">Resumen académico</p>
-  
-    <div class="grid-educacion">
-      <div class="header">Año</div>
-      <div class="header">Institución</div>
-      <div class="header">Título obtenido</div>
-  
-      <div class="dato">2023</div>
-      <div class="dato">Colegio Interamericano de Guatemala</div>
-      <div class="dato">Bachillerato en Ciencias y Letras</div>
-  
-      <div class="dato">2024 - Presente</div>
-      <div class="dato">Universidad Francisco Marroquín</div>
-      <div class="dato">Ingeniería en Ciencia de la Computación</div>
-    </div>
-  </section>  
-
-  <section id="experiencia">
-    <h2>Experiencia Laboral</h2>
-    <p class="caption">Historial de trabajo</p>
-  
-    <div class="grid-experiencia">
-      <div class="header">Período</div>
-      <div class="header">Empresa</div>
-      <div class="header">Puesto</div>
-  
-      <div class="dato">Jun 2023 – Ago 2023</div>
-      <div class="dato">Tech4Humanity</div>
-      <div class="dato">Desarrolladora Junior (Intern)</div>
-  
-      <div class="dato">Mar 2024 – Presente</div>
-      <div class="dato">Wais Solutions</div>
-      <div class="dato">Frontend Developer</div>
-    </div>
-  </section>  
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>  
-</body>
-
-<div class="alert alert-secondary text-center mt-3 shadow-sm" role="alert">
-  ¡Bienvenido a mi CV digital! Aquí encontrarás mi experiencia, estudios y habilidades.
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
