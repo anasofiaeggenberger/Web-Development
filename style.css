@@ -72,3 +72,26 @@
       margin-bottom: 5px;
       text-align: left;
     }
+
+    body {
+    background-color: #f9f9f9;
+    color: #222;
+    }
+  
+    section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    table {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+  
+    .cv-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
