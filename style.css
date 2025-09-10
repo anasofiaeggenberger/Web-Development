@@ -219,3 +219,16 @@ body.dark-mode a {
     grid-template-columns: 1fr 2fr 2fr;
   }
 }
+
+.footer {
+  font-size: 14px;
+  color: #888;
+  padding: 30px 0 10px 0;
+  border-top: 1px solid #e0dcd8;
+  margin-top: 60px;
+}
+
+body.dark-mode .footer {
+  color: #bbb;
+  border-top: 1px solid #444;
+}
