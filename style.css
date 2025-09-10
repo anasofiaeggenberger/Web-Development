@@ -116,6 +116,20 @@ li {
 
 .badges span {
   margin: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #e6e1dc;
+  color: #333;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.badges span:hover {
+  background-color: #d1c8be;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 section {
