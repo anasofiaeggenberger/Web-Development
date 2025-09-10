@@ -16,7 +16,6 @@
 <body>
   <button class="btn btn-outline-dark boton-darkmode" onclick="document.body.classList.toggle('dark-mode')">Modo Oscuro</button>
 
-  <!-- ✨ Saludo dinámico -->
   <div class="saludo-dinamico text-center mt-4">
     <h2 id="saludo"></h2>
   </div>
@@ -81,7 +80,11 @@
     </div>
   </div>
 
-  <div class="seccion">
+  <div class="text-center my-4">
+    <button class="btn btn-outline-dark" onclick="toggleExperiencia()">Mostrar/Ocultar Experiencia Laboral</button>
+  </div>
+  
+  <div class="seccion" id="experiencia">
     <h2>Experiencia Laboral</h2>
     <div class="grid-tabla">
       <div class="header">Período</div>
@@ -103,7 +106,6 @@
   </div>
 
   <script>
-    // 👋 Saludo dinámico
     const saludo = document.getElementById("saludo");
     const hora = new Date().getHours();
 
@@ -115,6 +117,17 @@
       saludo.textContent = "¡Buenas noches!";
     }
   </script>
+
+<script>
+  function toggleExperiencia() {
+    const seccion = document.getElementById("experiencia");
+    if (seccion.style.display === "none") {
+      seccion.style.display = "block";
+    } else {
+      seccion.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
