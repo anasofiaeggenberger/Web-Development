@@ -1,10 +1,8 @@
 <div class="text-center">
-  <button class="btn btn-outline-dark mb-3" (click)="toggleContacto()">
-    {{ mostrarContacto ? 'Ocultar' : 'Mostrar' }} Información de Contacto
-  </button>
+  <button class="btn btn-outline-dark mb-3" (click)="toggleContacto()">Mostrar/Ocultar Información de Contacto</button>
 </div>
 
-<div class="info-personal text-center" *ngIf="mostrarContacto">
+<div class="info-personal text-center" *ngIf="mostrar">
   <a href="mailto:anasofiaeggenberger@gmail.com">📧 anasofiaeggenberger@gmail.com</a>
   <a href="https://github.com/anasofiaeggenberger" target="_blank">💻 Mi GitHub</a>
   <a href="https://www.linkedin.com/in/ana-sof%C3%ADa-eggenberger-a945932b2/?trk=opento_sprofile_topcard" target="_blank">🔗 Mi LinkedIn</a>

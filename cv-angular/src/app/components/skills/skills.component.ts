@@ -6,21 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
+  filtro: string = '';
   habilidades: string[] = [
-    'Trabajo en equipo',
-    'Comunicación',
-    'Resolución de problemas',
-    'Adaptabilidad',
-    'Liderazgo',
-    'Gestión del tiempo',
-    'Aprendizaje autónomo'
+    'Trabajo en equipo', 'Comunicación', 'Resolución de problemas',
+    'Adaptabilidad', 'Liderazgo', 'Gestión del tiempo', 'Aprendizaje autónomo'
   ];
 
-  filtro: string = '';
-
-  get habilidadesFiltradas() {
-    return this.habilidades.filter(habilidad =>
-      habilidad.toLowerCase().includes(this.filtro.toLowerCase())
+  get habilidadesFiltradas(): string[] {
+    return this.habilidades.filter(h =>
+      h.toLowerCase().includes(this.filtro.toLowerCase())
     );
   }
 }
