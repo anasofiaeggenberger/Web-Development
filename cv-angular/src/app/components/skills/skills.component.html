@@ -1,22 +1,16 @@
 <div class="seccion">
-    <h3>Lenguajes de programación</h3>
-    <div class="badges">
-      <span class="badge text-bg-secondary">Python</span>
-      <span class="badge text-bg-secondary">HTML</span>
-      <span class="badge text-bg-secondary">C++</span>
-    </div>
+  <h3>Lenguajes de programación</h3>
+  <div class="badges">
+    <span class="badge text-bg-secondary">Python</span>
+    <span class="badge text-bg-secondary">HTML</span>
+    <span class="badge text-bg-secondary">C++</span>
   </div>
-  
-  <div class="seccion">
-    <h3>Soft Skills</h3>
-    <input type="text" id="buscadorHabilidad" class="form-control mb-3" placeholder="Buscar habilidad..." onkeyup="filtrarHabilidades()">
-    <div class="badges" id="listaHabilidades">
-      <span class="badge text-bg-secondary">Trabajo en equipo</span>
-      <span class="badge text-bg-secondary">Comunicación</span>
-      <span class="badge text-bg-secondary">Resolución de problemas</span>
-      <span class="badge text-bg-secondary">Adaptabilidad</span>
-      <span class="badge text-bg-secondary">Liderazgo</span>
-      <span class="badge text-bg-secondary">Gestión del tiempo</span>
-      <span class="badge text-bg-secondary">Aprendizaje autónomo</span>
-    </div>
-  </div>  
+</div>
+
+<div class="seccion">
+  <h3>Soft Skills</h3>
+  <input type="text" class="form-control mb-3" [(ngModel)]="filtro" placeholder="Buscar habilidad...">
+  <div class="badges" id="listaHabilidades">
+    <span class="badge text-bg-secondary" *ngFor="let h of habilidadesFiltradas">{{ h }}</span>
+  </div>
+</div>

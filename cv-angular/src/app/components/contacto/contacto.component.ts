@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent {
+  mostrarContacto = false;
 
+  toggleContacto() {
+    this.mostrarContacto = !this.mostrarContacto;
+  }
 }
