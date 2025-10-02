@@ -14,6 +14,7 @@ import { CvBotonComponent } from './components/cv-boton/cv-boton.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { StudiesComponent } from './components/studies/studies.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { StudiesComponent } from './components/studies/studies.component';
     CvBotonComponent,
     FooterComponent,
     JobsComponent,
-    StudiesComponent
+    StudiesComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
