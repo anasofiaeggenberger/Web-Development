@@ -1,0 +1,14 @@
+<div class="seccion">
+  <h3>Soft Skills</h3>
+  <input type="text" class="form-control mb-3" [(ngModel)]="filtro" placeholder="Buscar habilidad...">
+  <div class="badges" id="listaHabilidades">
+    <span class="badge text-bg-secondary" *ngFor="let h of habilidadesFiltradas">{{ h | capitalize }}</span>
+  </div>
+</div>
+
+<div class="seccion mt-4">
+  <h3>Technical Skills</h3>
+  <div class="badges">
+    <span class="badge text-bg-primary" *ngFor="let skill of skills">{{ skill | uppercase }}</span>
+  </div>
+</div>
