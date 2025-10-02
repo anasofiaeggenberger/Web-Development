@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -10,6 +12,8 @@ import { TecnologiasComponent } from './components/tecnologias/tecnologias.compo
 import { EducacionExperienciaComponent } from './components/educacion-experiencia/educacion-experiencia.component';
 import { CvBotonComponent } from './components/cv-boton/cv-boton.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { JobsComponent } from './components/jobs/jobs.component';
+import { StudiesComponent } from './components/studies/studies.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,14 @@ import { FooterComponent } from './components/footer/footer.component';
     TecnologiasComponent,
     EducacionExperienciaComponent,
     CvBotonComponent,
-    FooterComponent
+    FooterComponent,
+    JobsComponent,
+    StudiesComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule 
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,29 +1,36 @@
 <div class="seccion">
-    <h2>Educación</h2>
-    <div class="grid-tabla">
-      <div class="header">Año</div>
-      <div class="header">Institución</div>
-      <div class="header">Título</div>
-      <div class="dato">2023</div>
-      <div class="dato">Colegio Interamericano de Guatemala</div>
-      <div class="dato">Bachillerato en Ciencias y Letras</div>
-      <div class="dato">2024 - Presente</div>
-      <div class="dato">Universidad Francisco Marroquín</div>
-      <div class="dato">Ingeniería en Ciencia de la Computación</div>
-    </div>
+  <h2>Educación</h2>
+  <div class="grid-tabla">
+    <div class="header">Año</div>
+    <div class="header">Institución</div>
+    <div class="header">Título</div>
+    <div class="dato">2023</div>
+    <div class="dato">Colegio Interamericano de Guatemala</div>
+    <div class="dato">Bachillerato en Ciencias y Letras</div>
+    <div class="dato">2024 - Presente</div>
+    <div class="dato">Universidad Francisco Marroquín</div>
+    <div class="dato">Ingeniería en Ciencia de la Computación</div>
   </div>
-  
-  <div class="seccion" id="experiencia">
-    <h2>Experiencia Laboral</h2>
-    <div class="grid-tabla">
-      <div class="header">Período</div>
-      <div class="header">Empresa</div>
-      <div class="header">Puesto</div>
-      <div class="dato">Jun 2023 – Ago 2023</div>
-      <div class="dato">Tech4Humanity</div>
-      <div class="dato">Desarrolladora Junior (Intern)</div>
-      <div class="dato">Mar 2024 – Presente</div>
-      <div class="dato">Wais Solutions</div>
-      <div class="dato">Frontend Developer</div>
-    </div>
-  </div>  
+</div>
+
+<div class="seccion" id="experiencia">
+  <h2>Experiencia Laboral</h2>
+  <div class="grid-tabla">
+    <div class="header">Período</div>
+    <div class="header">Empresa</div>
+    <div class="header">Puesto</div>
+    <div class="dato">Jun 2023 – Ago 2023</div>
+    <div class="dato">Tech4Humanity</div>
+    <div class="dato">Desarrolladora Junior (Intern)</div>
+    <div class="dato">Mar 2024 – Presente</div>
+    <div class="dato">Wais Solutions</div>
+    <div class="dato">Frontend Developer</div>
+  </div>
+
+  <nav style="margin-top: 20px;">
+    <a routerLink="jobs" routerLinkActive="active">Ver Trabajos</a> | 
+    <a routerLink="studies" routerLinkActive="active">Ver Estudios</a>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>
