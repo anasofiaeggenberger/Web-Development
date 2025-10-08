@@ -11,8 +11,6 @@ import { ProgrammingQuoteComponent } from './components/programming-quote/progra
 const routes: Routes = [
   { path: 'about', component: HeaderComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: 'projects', component: ProyectosComponent },
-  { path: 'quote', component: ProgrammingQuoteComponent }, 
   { 
     path: 'experience', 
     component: EducacionExperienciaComponent,
@@ -21,7 +19,9 @@ const routes: Routes = [
       { path: 'studies', component: StudiesComponent }
     ]
   },
-  { path: '', redirectTo: '/about', pathMatch: 'full' } 
+  { path: 'projects', component: ProyectosComponent },
+  { path: 'quote', component: ProgrammingQuoteComponent },
+  { path: '', redirectTo: '/about', pathMatch: 'full' }
 ];
 
 @NgModule({
