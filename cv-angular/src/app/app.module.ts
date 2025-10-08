@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -15,6 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { StudiesComponent } from './components/studies/studies.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProgrammingQuoteComponent } from './components/programming-quote/programming-quote.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +32,16 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     FooterComponent,
     JobsComponent,
     StudiesComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    ProyectosComponent,
+    ProgrammingQuoteComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

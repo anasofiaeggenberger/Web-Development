@@ -1,11 +1,15 @@
-<button class="btn btn-outline-dark boton-darkmode" onclick="document.body.classList.toggle('dark-mode')">Modo Oscuro</button>
+<button class="btn btn-outline-dark boton-darkmode" onclick="document.body.classList.toggle('dark-mode')">
+  Modo Oscuro
+</button>
+
+<nav class="text-center mt-3 mb-4">
+  <a routerLink="/about" routerLinkActive="active" class="nav-link-inline">Sobre mí</a>
+  <a routerLink="/skills" routerLinkActive="active" class="nav-link-inline">Habilidades</a>
+  <a routerLink="/experience" routerLinkActive="active" class="nav-link-inline">Experiencia</a>
+  <a routerLink="/projects" routerLinkActive="active" class="nav-link-inline">Proyectos</a>
+  <a routerLink="/quote" routerLinkActive="active" class="nav-link-inline">Frase del día</a>
+</nav>
 
 <div class="saludo-dinamico text-center mt-4">
   <h2>{{ saludo }}</h2>
-</div>
-
-<div class="text-center">
-  <img src="assets/images/PHOTO-ASE.jpg" alt="Foto de Ana Sofía" class="foto-perfil">
-  <h1>Ana Sofía Eggenberger Flores</h1>
-  <p class="subtitulo">Computer Science Student</p>
 </div>
