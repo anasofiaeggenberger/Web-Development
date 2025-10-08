@@ -18,6 +18,7 @@ import { StudiesComponent } from './components/studies/studies.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProgrammingQuoteComponent } from './components/programming-quote/programming-quote.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProgrammingQuoteComponent } from './components/programming-quote/progra
     StudiesComponent,
     CapitalizePipe,
     ProyectosComponent,
-    ProgrammingQuoteComponent
+    ProgrammingQuoteComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionExperienciaComponent } from './components/educacion-experiencia/educacion-experiencia.component';
-import { HeaderComponent } from './components/header/header.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { StudiesComponent } from './components/studies/studies.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProgrammingQuoteComponent } from './components/programming-quote/programming-quote.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  { path: 'about', component: HeaderComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'skills', component: SkillsComponent },
   { 
     path: 'experience', 
