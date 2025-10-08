@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -17,6 +17,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { StudiesComponent } from './components/studies/studies.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProgrammingQuoteComponent } from './components/programming-quote/programming-quote.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,13 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     JobsComponent,
     StudiesComponent,
     CapitalizePipe,
-    ProyectosComponent
+    ProyectosComponent,
+    ProgrammingQuoteComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
     HttpClientModule 
   ],
   providers: [],

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GithubService {
 
-  private apiUrl = 'https://api.github.com/users/anasofiaeggenberger/repos'; // cambia por tu usuario
+  private apiUrl = 'https://api.github.com/users/anasofiaeggenberger/repos'; 
 
   constructor(private http: HttpClient) {}
 
