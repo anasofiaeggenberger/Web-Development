@@ -1,1 +1,9 @@
-<p>proyectos works!</p>
+<div class="seccion">
+    <h2>Proyectos</h2>
+    <div *ngFor="let repo of repos" class="proyecto">
+      <h3>{{ repo.name | uppercase }}</h3>
+      <p>{{ repo.description || 'Sin descripción' }}</p>
+      <p>⭐ {{ repo.stargazers_count }} estrellas</p>
+      <a [href]="repo.html_url" target="_blank">Ver en GitHub</a>
+    </div>
+  </div>  
