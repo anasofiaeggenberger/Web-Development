@@ -6,11 +6,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { StudiesComponent } from './components/studies/studies.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProgrammingQuoteComponent } from './components/programming-quote/programming-quote.component';
 
 const routes: Routes = [
   { path: 'about', component: HeaderComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: 'projects', component: ProyectosComponent }, 
+  { path: 'projects', component: ProyectosComponent },
+  { path: 'quote', component: ProgrammingQuoteComponent }, 
   { 
     path: 'experience', 
     component: EducacionExperienciaComponent,
