@@ -1,5 +1,3 @@
-
-mi-api/api.js
 mi-api/node_modules/.bin/nodemon
 mi-api/node_modules/.bin/nodetouch
 mi-api/node_modules/.bin/semver
@@ -898,6 +896,3 @@ mi-api/node_modules/wrappy/LICENSE
 mi-api/node_modules/wrappy/package.json
 mi-api/node_modules/wrappy/README.md
 mi-api/node_modules/wrappy/wrappy.js
-mi-api/package-lock.json
-mi-api/package.json
-mi-api/server.js
