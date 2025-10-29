@@ -1,0 +1,16 @@
+.nav-link-inline {
+    margin: 0 10px;           /* Espaciado horizontal entre enlaces */
+    text-decoration: none;    /* Quita subrayado */
+    color: #5a3e36;           /* Color suave y legible */
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav-link-inline:hover {
+    color: #000000;           
+  }
+  
+  .saludo-dinamico {
+    margin-top: 10px;      /* Espacio debajo del “¡Buenas noches!” */
+  }
+  
